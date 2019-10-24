@@ -2,11 +2,13 @@ package fr.gtm.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "images")
 public class Image {
+	@Id
 	@Column(name = "image")
 	private String image;
 	@Column(name = "fk_destination")
